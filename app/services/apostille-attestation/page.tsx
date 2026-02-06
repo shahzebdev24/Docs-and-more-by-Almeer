@@ -167,7 +167,7 @@ export default function ApostilleAttestation() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ i: i * 0.2 }}
+                            transition={{ delay: i * 0.2 }}
                             className="bg-[#FDFBF7] p-10 rounded-[40px] border border-gray-100 shadow-sm hover:shadow-xl transition-all group"
                         >
                             <div className="mb-6 transform group-hover:scale-110 transition-transform">{doc.icon}</div>
