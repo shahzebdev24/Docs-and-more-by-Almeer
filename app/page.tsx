@@ -6,6 +6,7 @@ import DetailedFeatures from '@/components/DetailedFeatures';
 import ValueProposition from '@/components/ValueProposition';
 import ContactCards from '@/components/ContactCards';
 import GlobalReach from '@/components/GlobalReach';
+import ServiceKeywords from '@/components/ServiceKeywords';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 
@@ -25,6 +26,7 @@ export default function Home() {
       <ValueProposition />
       <ContactCards />
       <GlobalReach />
+      <ServiceKeywords />
       <Footer />
     </main>
   );

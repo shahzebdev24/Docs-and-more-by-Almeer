@@ -94,11 +94,11 @@ export default function Hero() {
                                 Pakistan's Premier Attestation Partner
                             </span>
                             <h1 className="text-6xl md:text-8xl font-black text-[#006A70] mb-8 leading-none tracking-tighter italic">
-                                Your Gateway to <span className="text-[#B87333] not-italic">Global</span> Mobility
+                                Professional <span className="text-[#B87333] not-italic">Attestation</span> Services in Pakistan
                             </h1>
                             <p className="text-xl md:text-2xl text-[#36454F]/80 mb-12 leading-relaxed font-medium border-l-4 border-gray-100 pl-8">
-                                Elite document legalization services for MOFA, HEC, embassies, and international
-                                authorities. Trusted by 150,000+ global citizens since 2010.
+                                Get your documents verified by <span className="text-[#006A70] font-bold">MOFA, HEC, IBCC</span> and foreign embassies with record speed.
+                                Trusted by 150,000+ global citizens since 2010.
                             </p>
 
                             {/* Trust Badges */}
