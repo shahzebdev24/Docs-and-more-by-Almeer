@@ -74,11 +74,10 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <Link href="/" className="relative h-12 md:h-16 w-[180px] md:w-[300px] -ml-4">
                             <Image
-                                src="/Docsandmore.png"
+                                src="/AlmeerLogo.png"
                                 alt="Docs & More Logo"
                                 fill
                                 className="object-contain object-left"
-                                style={{ filter: 'brightness(0) saturate(100%) invert(31%) sepia(97%) saturate(692%) hue-rotate(136deg) brightness(88%) contrast(104%)' }}
                                 priority
                             />
                         </Link>
@@ -171,7 +170,7 @@ export default function Navbar() {
                             rel="noopener noreferrer"
                             className="bg-[#B87333] text-white hover:bg-[#8D5A28] font-black text-sm px-8 py-3 rounded-full transition-all shadow-lg transform hover:scale-105 inline-block uppercase tracking-wider"
                         >
-                            WhatsApp Us
+                            Contact Us
                         </a>
                     </div>
 

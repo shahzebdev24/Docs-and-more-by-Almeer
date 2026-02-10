@@ -141,7 +141,7 @@ export default function Hero() {
                         <div className="relative rounded-[50px] overflow-hidden shadow-2xl border-[20px] border-white group">
                             <Image
                                 src="/hero-image.png"
-                                alt="Elite Document Services"
+                                alt="Professional MOFA and Embassy Attestation Services in Pakistan"
                                 width={800}
                                 height={1000}
                                 priority

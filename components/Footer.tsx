@@ -32,11 +32,10 @@ export default function Footer() {
                     <div className="lg:col-span-4">
                         <div className="relative h-24 w-80 mb-8 group cursor-pointer -ml-4">
                             <Image
-                                src="/Docsandmore.png"
+                                src="/AlmeerLogo.png"
                                 alt="Docs & More Logo"
                                 fill
                                 className="object-contain object-left"
-                                style={{ filter: 'brightness(0) saturate(100%) invert(48%) sepia(34%) saturate(760%) hue-rotate(345deg) brightness(92%) contrast(106%)' }}
                             />
                         </div>
                         <p className="text-[#FDFBF7]/70 text-base font-medium leading-relaxed mb-8 max-w-sm">
@@ -92,7 +91,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-[10px] uppercase tracking-widest text-white/40 font-black mb-1">Email Us</p>
-                                    <p className="text-sm font-bold text-[#FDFBF7]/80">support@docsandmore.com.pk</p>
+                                    <p className="text-sm font-bold text-[#FDFBF7]/80">docsandmorebyalmeer@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start group">

@@ -12,7 +12,7 @@ const contactInfo = [
     },
     {
         title: "Email Us",
-        detail: "[EMAIL_ADDRESS]",
+        detail: "docsandmorebyalmeer@gmail.com",
         subDetail: "24/7 Support",
         icon: <Mail className="w-8 h-8 text-white" />,
         color: "bg-[#006A70]"

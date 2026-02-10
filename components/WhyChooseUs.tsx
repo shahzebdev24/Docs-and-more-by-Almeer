@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
                         <div className="relative rounded-[50px] overflow-hidden shadow-2xl border-[20px] border-white group">
                             <Image
                                 src="/Whychosseus.png"
-                                alt="Why Choose Docs & More"
+                                alt="Best Document Attestation Company in Pakistan - Docs & More"
                                 width={1200}
                                 height={1400}
                                 className="w-full h-[700px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
