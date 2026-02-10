@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
                     >
                         <div className="relative rounded-[50px] overflow-hidden shadow-2xl border-[20px] border-white group">
                             <Image
-                                src="/Whychose.png"
+                                src="/Whychosseus.png"
                                 alt="Why Choose Docs & More"
                                 width={1200}
                                 height={1400}

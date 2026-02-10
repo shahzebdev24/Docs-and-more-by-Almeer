@@ -30,12 +30,13 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="lg:col-span-4">
-                        <div className="relative h-16 w-56 mb-8 group cursor-pointer">
+                        <div className="relative h-24 w-80 mb-8 group cursor-pointer -ml-4">
                             <Image
-                                src="/logo.png"
+                                src="/Docsandmore.png"
                                 alt="Docs & More Logo"
                                 fill
-                                className="object-contain object-left brightness-0 invert"
+                                className="object-contain object-left"
+                                style={{ filter: 'brightness(0) saturate(100%) invert(48%) sepia(34%) saturate(760%) hue-rotate(345deg) brightness(92%) contrast(106%)' }}
                             />
                         </div>
                         <p className="text-[#FDFBF7]/70 text-base font-medium leading-relaxed mb-8 max-w-sm">

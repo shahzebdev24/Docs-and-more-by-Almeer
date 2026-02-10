@@ -69,15 +69,16 @@ export default function Navbar() {
         <div className="w-full font-sans fixed top-0 left-0 z-50">
             {/* Top Logo Section - White Background */}
             <div className="w-full bg-white border-b border-gray-100 shadow-sm">
-                <div className="mx-auto w-[90%] md:w-[70%] px-6 py-3 flex justify-between items-center">
+                <div className="mx-auto w-[90%] md:w-[70%] py-0 flex justify-between items-center">
                     {/* Logo Section */}
                     <div className="flex items-center">
-                        <Link href="/" className="relative h-16 md:h-20 w-[200px] md:w-[350px]">
+                        <Link href="/" className="relative h-12 md:h-16 w-[180px] md:w-[300px] -ml-4">
                             <Image
-                                src="/logo.png"
+                                src="/Docsandmore.png"
                                 alt="Docs & More Logo"
                                 fill
                                 className="object-contain object-left"
+                                style={{ filter: 'brightness(0) saturate(100%) invert(31%) sepia(97%) saturate(692%) hue-rotate(136deg) brightness(88%) contrast(104%)' }}
                                 priority
                             />
                         </Link>
