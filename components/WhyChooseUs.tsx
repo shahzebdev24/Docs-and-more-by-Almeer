@@ -28,7 +28,7 @@ const advantages = [
 
 export default function WhyChooseUs() {
     return (
-        <section id="why-choose-us" className="py-32 bg-white relative overflow-hidden">
+        <section id="why-choose-us" className="py-16 md:py-32 bg-transparent relative overflow-hidden">
             <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#006A70]/5 rounded-full blur-[120px] -ml-64 -mt-64"></div>
 
             <div className="mx-auto w-[90%] md:w-[70%] relative z-10">
@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
                                 alt="Best Document Attestation Company in Pakistan - Docs & More"
                                 width={1200}
                                 height={1400}
-                                className="w-full h-[700px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+                                className="w-full h-[400px] md:h-[700px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#00383C]/60 to-transparent"></div>
                         </div>
@@ -66,8 +66,8 @@ export default function WhyChooseUs() {
                         <span className="text-[#B87333] font-black tracking-[0.4em] uppercase text-xs mb-6 block underline decoration-2 underline-offset-8">
                             The Almeer Difference
                         </span>
-                        <h2 className="text-5xl md:text-7xl font-black text-[#006A70] mb-8 tracking-tighter leading-none italic uppercase">
-                            Why <span className="text-[#B87333] not-italic">150,000+</span> Trust Us
+                        <h2 className="text-5xl md:text-7xl font-black text-[#006A70] mb-8 tracking-tighter leading-none uppercase">
+                            Why <span className="text-[#B87333]">150,000+</span> Trust Us
                         </h2>
                         <p className="text-xl text-[#36454F]/80 font-medium leading-relaxed mb-12 border-l-4 border-gray-100 pl-8">
                             We're not just another attestation agency. We're a legal facilitation consultancy

@@ -73,7 +73,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="relative min-h-screen flex items-center justify-center bg-[#FDFBF7] overflow-hidden pt-[280px] md:pt-[320px] pb-20"
+            className="relative min-h-screen flex items-center justify-center bg-transparent overflow-hidden pt-[180px] md:pt-[240px] pb-20"
         >
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#006A70]/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
@@ -93,8 +93,8 @@ export default function Hero() {
                             <span className="text-[#B87333] font-black tracking-[0.4em] uppercase text-xs mb-6 block">
                                 Pakistan's Premier Attestation Partner
                             </span>
-                            <h1 className="text-6xl md:text-8xl font-black text-[#006A70] mb-8 leading-none tracking-tighter italic">
-                                Professional <span className="text-[#B87333] not-italic">Attestation</span> Services in Pakistan
+                            <h1 className="text-6xl md:text-8xl font-black text-[#006A70] mb-8 leading-none tracking-tighter">
+                                Professional <span className="text-[#B87333]">Attestation</span> Services in Pakistan
                             </h1>
                             <p className="text-xl md:text-2xl text-[#36454F]/80 mb-12 leading-relaxed font-medium border-l-4 border-gray-100 pl-8">
                                 Get your documents verified by <span className="text-[#006A70] font-bold">MOFA, HEC, IBCC</span> and foreign embassies with record speed.
@@ -145,7 +145,7 @@ export default function Hero() {
                                 width={800}
                                 height={1000}
                                 priority
-                                className="w-full h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+                                className="w-full h-[350px] md:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#00383C]/60 to-transparent"></div>
 

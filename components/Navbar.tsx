@@ -68,18 +68,17 @@ export default function Navbar() {
     return (
         <div className="w-full font-sans fixed top-0 left-0 z-50">
             {/* Top Logo Section - White Background */}
-            <div className="w-full bg-white border-b border-gray-100 shadow-sm">
+            <div className="w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
                 <div className="mx-auto w-[90%] md:w-[70%] py-0 flex justify-between items-center">
                     {/* Logo Section */}
                     <div className="flex items-center">
-                        <Link href="/" className="relative h-12 md:h-16 w-[180px] md:w-[300px] -ml-4">
-                            <Image
-                                src="/AlmeerLogo.png"
-                                alt="Docs & More Logo"
-                                fill
-                                className="object-contain object-left"
-                                priority
-                            />
+                        <Link href="/" className="flex flex-col py-2 md:py-4 transition-all">
+                            <span className="text-xl md:text-3xl font-black text-[#006A70] tracking-tighter uppercase leading-none">
+                                Docs <span className="text-[#B87333]">&</span> More
+                            </span>
+                            <span className="text-[8px] md:text-xs font-bold text-gray-400 tracking-[0.3em] uppercase mt-1">
+                                By Almeer
+                            </span>
                         </Link>
                     </div>
 
@@ -103,8 +102,8 @@ export default function Navbar() {
             </div>
 
             {/* Bottom Nav Section - Teal Background */}
-            <div className="w-full bg-[#006A70] shadow-lg">
-                <div className="mx-auto w-[90%] md:w-[70%] px-6 py-4 flex items-center justify-between text-white">
+            <div className="w-full bg-[#006A70]/90 backdrop-blur-md shadow-lg">
+                <div className="mx-auto w-[90%] md:w-[70%] px-6 py-2 md:py-4 flex items-center justify-between text-white">
                     {/* Navigation Links */}
                     <div className="hidden lg:flex items-center gap-10 text-base font-bold">
                         {navLinks.map((link) => {

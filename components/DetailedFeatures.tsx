@@ -71,7 +71,7 @@ const detailedCards = [
 
 export default function DetailedFeatures() {
     return (
-        <section className="pb-24 bg-white">
+        <section className="pb-24 bg-transparent">
             <div className="mx-auto w-[90%] md:w-[70%]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {detailedCards.map((card, index) => (

@@ -30,14 +30,14 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="lg:col-span-4">
-                        <div className="relative h-24 w-80 mb-8 group cursor-pointer -ml-4">
-                            <Image
-                                src="/AlmeerLogo.png"
-                                alt="Docs & More Logo"
-                                fill
-                                className="object-contain object-left"
-                            />
-                        </div>
+                        <Link href="/" className="flex flex-col mb-8">
+                            <span className="text-3xl font-black text-white tracking-tighter uppercase leading-none">
+                                Docs <span className="text-[#B87333]">&</span> More
+                            </span>
+                            <span className="text-[10px] font-bold text-white/40 tracking-[0.3em] uppercase mt-1">
+                                By Almeer
+                            </span>
+                        </Link>
                         <p className="text-[#FDFBF7]/70 text-base font-medium leading-relaxed mb-8 max-w-sm">
                             Pakistan's most trusted partner for document legalisation,
                             embassy attestation, and global mobility services. We handle your documents with precision and care.
@@ -127,9 +127,14 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    <p className="text-[10px] tracking-[0.2em] uppercase text-white/40 font-bold">
-                        © {new Date().getFullYear()} Docs & More by Almeer. Legal Partner Since 2010.
-                    </p>
+                    <div className="flex flex-col md:items-end gap-1">
+                        <p className="text-[10px] tracking-[0.2em] uppercase text-white/40 font-bold">
+                            © {new Date().getFullYear()} Docs & More by Almeer. Legal Partner Since 2010.
+                        </p>
+                        <p className="text-[9px] tracking-[0.1em] uppercase text-white/30 font-medium">
+                            Developed by <a href="https://techsparks.co" target="_blank" rel="noopener noreferrer" className="text-[#B87333] hover:underline">TechSparks</a>
+                        </p>
+                    </div>
 
                     <div className="flex gap-6">
                         <Link href="#" className="text-[10px] uppercase tracking-widest text-white/40 hover:text-[#B87333] transition-colors font-black">Privacy</Link>

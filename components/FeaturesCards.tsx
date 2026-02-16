@@ -43,14 +43,14 @@ const cards = [
 
 export default function FeaturesCards() {
     return (
-        <section className="py-32 bg-[#FDFBF7] relative overflow-hidden">
+        <section className="py-16 md:py-32 bg-transparent relative overflow-hidden">
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#B87333]/5 rounded-full blur-[120px] -mr-64 -mb-64"></div>
 
             <div className="mx-auto w-[90%] md:w-[70%] relative z-10">
                 <div className="text-center mb-20">
                     <span className="text-[#B87333] font-black tracking-[0.4em] uppercase text-xs mb-4 block">Our Core Strengths</span>
-                    <h2 className="text-5xl md:text-7xl font-black text-[#006A70] tracking-tighter uppercase italic mb-8">
-                        What Makes Us <span className="text-[#B87333] not-italic">Different</span>
+                    <h2 className="text-5xl md:text-7xl font-black text-[#006A70] tracking-tighter uppercase mb-8">
+                        What Makes Us <span className="text-[#B87333]">Different</span>
                     </h2>
                     <p className="text-xl text-gray-600 font-medium max-w-3xl mx-auto">
                         Six pillars of excellence that have earned the trust of 150,000+ global citizens.
