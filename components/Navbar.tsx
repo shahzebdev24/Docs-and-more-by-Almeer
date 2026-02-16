@@ -67,8 +67,8 @@ export default function Navbar() {
 
     return (
         <div className="w-full font-sans fixed top-0 left-0 z-50">
-            {/* Top Logo Section - White Background */}
-            <div className="w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+            {/* Top Logo Section - White Background (Hidden on Mobile) */}
+            <div className="w-full hidden md:block bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
                 <div className="mx-auto w-[90%] md:w-[70%] py-0 flex justify-between items-center">
                     {/* Logo Section */}
                     <div className="flex items-center">
@@ -173,10 +173,18 @@ export default function Navbar() {
                         </a>
                     </div>
 
-                    {/* Mobile Menu Icon */}
-                    <div className="lg:hidden text-white">
+                    {/* Mobile: Logo (Left) + Menu (Right) */}
+                    <div className="lg:hidden flex items-center justify-between w-full text-white">
+                        <Link href="/" className="flex flex-col py-1">
+                            <span className="text-lg font-black tracking-tighter uppercase leading-none">
+                                Docs <span className="text-[#B87333]">&</span> More
+                            </span>
+                            <span className="text-[7px] font-bold text-white/70 tracking-[0.2em] uppercase">
+                                By Almeer
+                            </span>
+                        </Link>
                         <button className="p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                            {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+                            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
                         </button>
                     </div>
                 </div>
