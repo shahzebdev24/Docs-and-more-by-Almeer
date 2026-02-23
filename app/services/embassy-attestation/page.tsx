@@ -88,7 +88,7 @@ export default function EmbassyAttestation() {
                                 Official verification from Saudi Arabia, UAE, Qatar, and all major Global Embassies.
                                 Secure processing for your visas, employment, and international moves.
                             </p>
-                            <Link href="/contact" className="bg-[#006A70] text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-[#004f54] transition-all shadow-xl inline-flex items-center gap-3 group">
+                            <Link href="https://wa.me/923122373233?text=Hello%2C%20I%20need%20help%20with%20document%20attestation" className="bg-[#006A70] text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-[#004f54] transition-all shadow-xl inline-flex items-center gap-3 group">
                                 Start Embassy Process
                                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                             </Link>
@@ -200,7 +200,7 @@ export default function EmbassyAttestation() {
                         We work with European, American, and Asian consulates for all categories
                         of documents. Contact our expert consultants for a custom quote.
                     </p>
-                    <Link href="/contact" className="text-[#B87333] font-black text-xl flex items-center justify-center gap-2 hover:gap-4 transition-all">
+                    <Link href="https://wa.me/923122373233?text=Hello%2C%20I%20need%20help%20with%20document%20attestation" className="text-[#B87333] font-black text-xl flex items-center justify-center gap-2 hover:gap-4 transition-all">
                         Consult Our Experts <ArrowRight />
                     </Link>
                 </div>
@@ -242,3 +242,4 @@ export default function EmbassyAttestation() {
         </main>
     );
 }
+

@@ -36,6 +36,7 @@ const services = [
     { name: "Apostille Attestation", href: "/services/apostille-attestation" },
     { name: "HEC Attestation", href: "/services/hec-attestation" },
     { name: "IBCC Attestation", href: "/services/ibcc-attestation" },
+    { name: "IBCC Equivalency 'A' & 'O'", href: "/services/ibcc-equivalency" },
     { name: "EDO Attestation", href: "/services/edo-attestation" },
     { name: "Education Secretariat", href: "/services/education-secretariat" },
     { name: "Degree Issuance", href: "/services/university-degree-issuance" },
@@ -56,6 +57,7 @@ export default function Navbar() {
     const pathname = usePathname();
     const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
     const navLinks = [
         { name: "Home", href: "/" },
@@ -198,37 +200,60 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="lg:hidden bg-white border-b border-gray-100 overflow-hidden"
+                        className="lg:hidden bg-white border-b border-gray-100 overflow-y-auto"
+                        style={{ maxHeight: '85vh' }}
                     >
-                        <div className="px-6 py-8 space-y-6">
+                        <div className="px-6 py-6 space-y-2">
                             {navLinks.map((link) => (
                                 <div key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-xl font-bold text-[#006A70] block mb-2 uppercase tracking-wide"
-                                        onClick={() => link.hasDropdown ? null : setIsMobileMenuOpen(false)}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                    {link.hasDropdown && (
-                                        <div className="pl-4 space-y-3 mt-4 border-l-2 border-[#B87333]/30">
-                                            {services.map((service) => (
-                                                <Link
-                                                    key={service.name}
-                                                    href={service.href}
-                                                    className="block text-sm font-semibold text-gray-600 hover:text-[#B87333]"
-                                                    onClick={() => setIsMobileMenuOpen(false)}
-                                                >
-                                                    {service.name}
-                                                </Link>
-                                            ))}
-                                        </div>
+                                    {link.hasDropdown ? (
+                                        <button
+                                            className="w-full flex items-center justify-between text-xl font-bold text-[#006A70] py-3 uppercase tracking-wide"
+                                            onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                                        >
+                                            <span>{link.name}</span>
+                                            <ChevronDown className={`w-5 h-5 text-[#B87333] transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                                        </button>
+                                    ) : (
+                                        <Link
+                                            href={link.href}
+                                            className="text-xl font-bold text-[#006A70] block py-3 uppercase tracking-wide"
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                        >
+                                            {link.name}
+                                        </Link>
                                     )}
+
+                                    <AnimatePresence>
+                                        {link.hasDropdown && isMobileServicesOpen && (
+                                            <motion.div
+                                                initial={{ opacity: 0, height: 0 }}
+                                                animate={{ opacity: 1, height: 'auto' }}
+                                                exit={{ opacity: 0, height: 0 }}
+                                                transition={{ duration: 0.25 }}
+                                                className="overflow-hidden"
+                                            >
+                                                <div className="pl-4 border-l-2 border-[#B87333]/30 pb-3 max-h-[55vh] overflow-y-auto pr-2">
+                                                    {services.map((service) => (
+                                                        <Link
+                                                            key={service.name}
+                                                            href={service.href}
+                                                            className="flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-[#B87333] py-2.5 border-b border-gray-50 last:border-0 transition-colors"
+                                                            onClick={() => { setIsMobileMenuOpen(false); setIsMobileServicesOpen(false); }}
+                                                        >
+                                                            <span className="w-1.5 h-1.5 rounded-full bg-[#B87333] flex-shrink-0"></span>
+                                                            {service.name}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
                                 </div>
                             ))}
 
                             {/* Mobile Contact */}
-                            <div className="flex flex-col gap-2">
+                            <div className="flex flex-col gap-2 pt-4">
                                 <a
                                     href="tel:03122373233"
                                     className="flex items-center gap-3 px-6 py-4 bg-[#FDFBF7] rounded-2xl border border-gray-100"
