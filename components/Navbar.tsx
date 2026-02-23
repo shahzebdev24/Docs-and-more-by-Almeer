@@ -95,6 +95,7 @@ export default function Navbar() {
                             <div className="text-left">
                                 <div className="text-[8px] uppercase tracking-widest text-gray-400 font-bold">Call Now</div>
                                 <div className="text-sm font-black text-[#006A70] group-hover:text-[#B87333] transition-colors">0312-2373233</div>
+                                <div className="text-sm font-black text-[#006A70] group-hover:text-[#B87333] transition-colors">0308-2838062</div>
                             </div>
                         </a>
                     </div>
@@ -227,13 +228,22 @@ export default function Navbar() {
                             ))}
 
                             {/* Mobile Contact */}
-                            <a
-                                href="tel:03122373233"
-                                className="flex items-center gap-3 px-6 py-4 bg-[#FDFBF7] rounded-2xl border border-gray-100"
-                            >
-                                <Phone className="w-5 h-5 text-[#B87333]" />
-                                <span className="font-black text-[#006A70]">0312-2373233</span>
-                            </a>
+                            <div className="flex flex-col gap-2">
+                                <a
+                                    href="tel:03122373233"
+                                    className="flex items-center gap-3 px-6 py-4 bg-[#FDFBF7] rounded-2xl border border-gray-100"
+                                >
+                                    <Phone className="w-5 h-5 text-[#B87333]" />
+                                    <span className="font-black text-[#006A70]">0312-2373233</span>
+                                </a>
+                                <a
+                                    href="tel:03082838062"
+                                    className="flex items-center gap-3 px-6 py-4 bg-[#FDFBF7] rounded-2xl border border-gray-100"
+                                >
+                                    <Phone className="w-5 h-5 text-[#B87333]" />
+                                    <span className="font-black text-[#006A70]">0308-2838062</span>
+                                </a>
+                            </div>
                         </div>
                     </motion.div>
                 )}

@@ -101,6 +101,7 @@ export default function Footer() {
                                 <div>
                                     <p className="text-[10px] uppercase tracking-widest text-white/40 font-black mb-1">Call Us</p>
                                     <p className="text-sm font-bold text-[#FDFBF7]/80">0312-2373233</p>
+                                    <p className="text-sm font-bold text-[#FDFBF7]/80">0308-2838062</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start group">

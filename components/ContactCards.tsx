@@ -5,8 +5,8 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const contactInfo = [
     {
         title: "Call Us",
-        detail: "0312-2373233",
-        subDetail: "Mon-Fri 9AM-6PM",
+        detail: "0312-2373233 / 0308-2838062",
+        subDetail: "Available for Calls & WhatsApp",
         icon: <Phone className="w-8 h-8 text-white" />,
         color: "bg-[#006A70]"
     },
