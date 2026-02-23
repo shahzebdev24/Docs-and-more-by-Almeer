@@ -89,7 +89,7 @@ export default function UniversityDegree() {
                                 We bridge the gap between you and your university for a hassle-free experience.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link href="/contact" className="bg-[#006A70] text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-[#004f54] transition-all shadow-xl inline-flex items-center gap-3 group">
+                                <Link href="https://wa.me/923122373233?text=Hello%2C%20I%20need%20help%20with%20document%20attestation" className="bg-[#006A70] text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-[#004f54] transition-all shadow-xl inline-flex items-center gap-3 group">
                                     Apply Now
                                     <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                                 </Link>
@@ -247,3 +247,4 @@ export default function UniversityDegree() {
         </main>
     );
 }
+

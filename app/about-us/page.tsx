@@ -217,7 +217,7 @@ export default function AboutUs() {
                             Join over 150,000 global citizens who trusted Almeer Legacy with their most valuable documents.
                         </p>
                         <div className="flex flex-wrap justify-center gap-8">
-                            <Link href="/contact" className="bg-[#00383C] text-white px-12 py-6 rounded-full font-black text-xl hover:bg-[#B87333] transition-all shadow-xl hover:-translate-y-2 flex items-center gap-4 group">
+                            <Link href="https://wa.me/923122373233?text=Hello%2C%20I%20need%20help%20with%20document%20attestation" className="bg-[#00383C] text-white px-12 py-6 rounded-full font-black text-xl hover:bg-[#B87333] transition-all shadow-xl hover:-translate-y-2 flex items-center gap-4 group">
                                 Start Your Process
                                 <ChevronRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                             </Link>
@@ -233,3 +233,4 @@ export default function AboutUs() {
         </main>
     );
 }
+
