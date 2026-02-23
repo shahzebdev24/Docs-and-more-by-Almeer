@@ -250,7 +250,7 @@ export default function HowItWorks() {
                             Our compliance experts are available for a one-on-one session to clarify your specific document needs.
                         </p>
                         <div className="flex flex-wrap justify-center gap-8">
-                            <Link href="/contact" className="bg-[#006A70] text-white px-12 py-6 rounded-full font-black text-xl hover:bg-[#B87333] transition-all shadow-xl hover:-translate-y-2 flex items-center gap-4 group">
+                            <Link href="https://wa.me/923122373233?text=Hello%2C%20I%20need%20help%20with%20document%20attestation" className="bg-[#006A70] text-white px-12 py-6 rounded-full font-black text-xl hover:bg-[#B87333] transition-all shadow-xl hover:-translate-y-2 flex items-center gap-4 group">
                                 <Headset className="w-8 h-8 group-hover:rotate-12 transition-transform" />
                                 Talk to an Expert
                             </Link>
@@ -267,3 +267,4 @@ export default function HowItWorks() {
         </main>
     );
 }
+
